@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio de Jonathan</title>
   <style>
     body {
@@ -35,17 +35,30 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    iframe {
+    img.project-image {
       width: 100%;
-      height: 500px;
-      border: none;
-      margin-top: 1rem;
+      max-width: 700px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img.project-image:hover {
+      transform: scale(1.03);
     }
     footer {
       text-align: center;
       padding: 2rem;
       background-color: #2c3e50;
       color: white;
+    }
+    .download-btn {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
     }
   </style>
 </head>
@@ -71,7 +84,9 @@
   <div class="project">
     <h3>Dashboard en Tableau: Análisis de Clientes</h3>
     <p>Visualización creada en Tableau Public para analizar patrones de clientes y comportamiento de compra.</p>
-    <iframe src="https://public.tableau.com/app/profile/jonathan.telica.barquero/viz/NorthwindSales_17485788460150/Dashboard2"></iframe>
+    <a href="https://public.tableau.com/app/profile/jonathan.telica.barquero/viz/NorthwindSales_17485788460150/Dashboard2" target="_blank" rel="noopener noreferrer">
+     <img class="project-image" src="Northwind Dashboard.png" alt="Dashboard Tableau - Análisis de Clientes" />
+    </a>
   </div>
 
 </section>
@@ -81,11 +96,11 @@
   <p>Puedes contactarme a través de:</p>
   <ul>
     <li>Email: jonabska8@gmail.com</li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/jonathan-telica-barquero-053a10192" target="_blank">Mi perfil</a></li>
-    <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">Mis proyectos</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/jonathan-telica-barquero-053a10192" target="_blank" rel="noopener noreferrer">Mi perfil</a></li>
+    <li>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">Mis proyectos</a></li>
   </ul>
   <p>
-    <a href="cv-jonathan.pdf" download style="background-color: #2c3e50; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">
+    <a href="cv-jonathan.pdf" download class="download-btn">
       📄 Descargar mi CV
     </a>
   </p>
