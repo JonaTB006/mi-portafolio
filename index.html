@@ -47,11 +47,12 @@
       height: auto;
     }
     .project-image {
-      transition: transform 0.3s ease; /* Transición suave */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para ambos efectos */
     }
 
     .project-image:hover {
       transform: scale(2.0); /* Efecto zoom al pasar el cursor */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
     }
     
     .download-legend {
